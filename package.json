@@ -1,0 +1,24 @@
+{
+  "name": "eyeagle-design-system",
+  "private": true,
+  "version": "0.1.0-alpha.1",
+  "packageManager": "pnpm@11.9.0",
+  "type": "module",
+  "scripts": {
+    "tokens:build": "node scripts/build-tokens.mjs",
+    "tokens:validate": "node scripts/validate-tokens.mjs",
+    "tokens:compare-figma": "node scripts/compare-figma-export.mjs",
+    "components:test": "pnpm --filter @eyeagle/components test",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "build": "pnpm tokens:validate && pnpm tokens:build && pnpm tokens:compare-figma && pnpm components:test"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.5.4",
+    "@storybook/addon-docs": "^10.5.4",
+    "@storybook/web-components-vite": "^10.5.4",
+    "chromatic": "^18.1.0",
+    "storybook": "^10.5.4"
+  }
+}

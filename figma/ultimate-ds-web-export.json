@@ -1,0 +1,69 @@
+{
+  "$description": "Read-only Figma export snapshot for the approved Ultimate DS Web typography contract.",
+  "source": {
+    "fileKey": "0KamrNF87WktxWoXFspYyC",
+    "collection": "zz Internal / Pulse / Web / Typography"
+  },
+  "metadata": {
+    "descriptionSource": "contract",
+    "scope": "initial typography value and type snapshot"
+  },
+  "tokens": {
+    "type": {
+      "display": {
+        "hero": {
+          "fontSize": { "$type": "dimension", "$value": "64px", "$description": "Large hero display text. Maps to Ultimate DS Web Display Hero." },
+          "lineHeight": { "$type": "dimension", "$value": "68px", "$description": "Large hero display line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 700, "$description": "Bold hero display weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-2%", "$description": "Tight hero display tracking." }
+        }
+      },
+      "heading": {
+        "h1": {
+          "fontSize": { "$type": "dimension", "$value": "36px", "$description": "Primary page heading size." },
+          "lineHeight": { "$type": "dimension", "$value": "44px", "$description": "Primary page heading line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 600, "$description": "Semibold H1 weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1.2%", "$description": "H1 tracking." }
+        },
+        "h2": {
+          "fontSize": { "$type": "dimension", "$value": "28px", "$description": "Section heading size." },
+          "lineHeight": { "$type": "dimension", "$value": "36px", "$description": "Section heading line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 600, "$description": "Semibold H2 weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1.2%", "$description": "H2 tracking." }
+        },
+        "h3": {
+          "fontSize": { "$type": "dimension", "$value": "20px", "$description": "Subsection heading size." },
+          "lineHeight": { "$type": "dimension", "$value": "28px", "$description": "Subsection heading line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 600, "$description": "Semibold H3 weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1.5%", "$description": "H3 tracking." }
+        },
+        "h4": {
+          "fontSize": { "$type": "dimension", "$value": "16px", "$description": "Compact heading size." },
+          "lineHeight": { "$type": "dimension", "$value": "24px", "$description": "Compact heading line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 600, "$description": "Semibold H4 weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1.5%", "$description": "H4 tracking." }
+        }
+      },
+      "body": {
+        "large": {
+          "fontSize": { "$type": "dimension", "$value": "18px", "$description": "Large body copy size." },
+          "lineHeight": { "$type": "dimension", "$value": "28px", "$description": "Large body copy line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 400, "$description": "Regular large body weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1%", "$description": "Large body tracking." }
+        },
+        "default": {
+          "fontSize": { "$type": "dimension", "$value": "16px", "$description": "Default body copy size." },
+          "lineHeight": { "$type": "dimension", "$value": "24px", "$description": "Default body copy line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 400, "$description": "Regular default body weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1%", "$description": "Default body tracking." }
+        },
+        "small": {
+          "fontSize": { "$type": "dimension", "$value": "14px", "$description": "Small body copy size." },
+          "lineHeight": { "$type": "dimension", "$value": "20px", "$description": "Small body copy line height." },
+          "fontWeight": { "$type": "fontWeight", "$value": 400, "$description": "Regular small body weight." },
+          "letterSpacing": { "$type": "dimension", "$value": "-1%", "$description": "Small body tracking." }
+        }
+      }
+    }
+  }
+}

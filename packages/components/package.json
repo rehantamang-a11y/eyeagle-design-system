@@ -1,0 +1,12 @@
+{
+  "name": "@eyeagle/components",
+  "version": "0.1.0-alpha.1",
+  "description": "EyEagle v1 design-system Web Components.",
+  "type": "module",
+  "files": ["src", "README.md", "fixture.html"],
+  "sideEffects": ["./src/index.js", "./src/styles.css"],
+  "exports": { ".": "./src/index.js", "./styles.css": "./src/styles.css", "./package.json": "./package.json" },
+  "publishConfig": { "access": "public" },
+  "scripts": { "test": "node test/contract.mjs" },
+  "dependencies": { "@eyeagle/tokens": "workspace:*" }
+}

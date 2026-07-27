@@ -1,0 +1,3 @@
+@import "@eyeagle/tokens/css";
+
+:root { font-family: var(--ey-font-family-sans, "Plus Jakarta Sans", sans-serif); }

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EyEagle v1 Component Fixture</title>
+    <link rel="stylesheet" href="../tokens/src/index.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/index.js"></script>
+    <style>body{margin:0;padding:2rem;background:var(--ey-color-bg-page);font-family:var(--ey-font-family-sans)}main{display:grid;gap:2rem;max-width:75rem;margin:auto}section{display:grid;gap:1rem;padding:2rem;background:#fff;border-radius:1.25rem}form{display:grid;gap:1rem;max-width:28rem}.row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}</style>
+  </head>
+  <body>
+    <main>
+      <section><h1>EyEagle v1 Components</h1><div class="row"><ey-button>Become a member</ey-button><ey-button intent="secondary">How it works</ey-button><ey-icon-button label="Open menu">menu</ey-icon-button><ey-status-badge intent="success">Ready</ey-status-badge></div></section>
+      <section><h2>Form states</h2><form><ey-text-input label="Email" name="email" required help="We will use this to create your account."></ey-text-input><ey-text-input label="Invalid email" name="invalid" error="Enter a valid email address."></ey-text-input><ey-select label="Plan" name="plan" options="Peace of Mind|Easy Start"></ey-select><div class="row"><ey-button loading>Loading</ey-button><ey-button disabled>Disabled</ey-button></div></form></section>
+      <section><h2>Navigation and surfaces</h2><ey-nav-bar scrolled><span slot="brand">EyEagle</span><span slot="links"><a href="#">How it works</a> <a href="#">Bathroom assessment</a> <a href="#">App</a></span><ey-button slot="cta" size="sm">Join</ey-button></ey-nav-bar><ey-card><strong slot="title">Bathroom protection</strong><p>A system designed around real homes and family response.</p></ey-card></section>
+    </main>
+  </body>
+</html>
