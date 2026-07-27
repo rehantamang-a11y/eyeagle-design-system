@@ -7,7 +7,7 @@ The repository contains the machine-readable token contract and the first standa
 ## Current status
 
 - Version: `0.1.0-alpha.1`
-- Packages: `@eyeagle/tokens`, `@eyeagle/components`
+- Packages: `@eyeagle/tokens`, `@eyeagle/assets`, `@eyeagle/components`
 - Release model: private prereleases
 - Website integration: intentionally deferred
 
@@ -28,6 +28,7 @@ pnpm tokens:compare-figma
 pnpm storybook
 pnpm storybook:build
 pnpm components:test
+pnpm --filter @eyeagle/assets test
 pnpm build
 pnpm packages:verify
 ```
@@ -46,6 +47,7 @@ When the alpha API is approved, publish the token package first and the componen
 
 ```bash
 pnpm --filter @eyeagle/tokens publish --access public
+pnpm --filter @eyeagle/assets publish --access public
 pnpm --filter @eyeagle/components publish --access public
 ```
 
