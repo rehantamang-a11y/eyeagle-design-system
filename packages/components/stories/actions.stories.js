@@ -9,7 +9,7 @@ const controls = {
   loading: { control: "boolean" },
 };
 export const Primary = {
-  args: { label: "Button label", size: "md", intent: "primary", disabled: false, loading: false },
+  args: { label: "Button label updated", size: "md", intent: "primary", disabled: false, loading: false },
   argTypes: controls,
   render: (args) => { const element = document.createElement("ey-button"); element.textContent = args.label; return setAttributes(element, args, ["size", "intent", "disabled", "loading"]); },
 };
