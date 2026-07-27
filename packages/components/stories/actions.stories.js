@@ -1,7 +1,11 @@
 import "../src/index.js";
 import { setAttributes } from "./helpers.js";
 
-export default { title: "EyEagle DS/Actions/Button", tags: ["autodocs"] };
+export default {
+  title: "EyEagle DS/Actions/Button",
+  tags: ["autodocs"],
+  parameters: { layout: "centered" },
+};
 const controls = {
   size: { control: "select", options: ["sm", "md", "lg"] },
   intent: { control: "select", options: ["primary", "secondary", "neutral"] },

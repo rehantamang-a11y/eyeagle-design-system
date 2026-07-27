@@ -1,7 +1,11 @@
 import "../src/index.js";
 import { setAttributes } from "./helpers.js";
 
-export default { title: "EyEagle DS/Feedback", tags: ["autodocs"] };
+export default {
+  title: "EyEagle DS/Feedback",
+  tags: ["autodocs"],
+  parameters: { layout: "centered" },
+};
 export const StatusBadge = {
   name: "Status Badge / Success",
   args: { label: "Assessment complete", size: "md", intent: "success" },
