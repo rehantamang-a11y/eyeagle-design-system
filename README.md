@@ -34,6 +34,8 @@ pnpm packages:verify
 
 Storybook is the visual review surface for the v1 Web Components. See [`docs/storybook.md`](docs/storybook.md) for local review and the later Chromatic publishing flow.
 
+The static Storybook can be shared publicly through GitHub Pages. See [`docs/public-storybook.md`](docs/public-storybook.md).
+
 The Astro website remains frozen until this foundation is accepted.
 
 ## Package workflow
