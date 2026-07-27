@@ -13,6 +13,8 @@
     "storybook:build": "storybook build",
     "build-storybook": "storybook build",
     "chromatic": "chromatic --exit-zero-on-changes",
+    "packages:pack": "mkdir -p dist && pnpm --filter @eyeagle/tokens pack --pack-destination dist && pnpm --filter @eyeagle/components pack --pack-destination dist",
+    "packages:verify": "pnpm build && pnpm build-storybook && pnpm packages:pack",
     "build": "pnpm tokens:validate && pnpm tokens:build && pnpm tokens:compare-figma && pnpm components:test"
   },
   "devDependencies": {

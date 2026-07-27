@@ -14,5 +14,8 @@
     "./tokens": "./src/tokens.json",
     "./css": "./src/index.css"
   },
+  "scripts": {
+    "prepack": "node ../../scripts/validate-tokens.mjs && node ../../scripts/build-tokens.mjs"
+  },
   "publishConfig": { "access": "public" }
 }

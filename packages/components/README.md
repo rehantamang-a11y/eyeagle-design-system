@@ -2,6 +2,14 @@
 
 Framework-neutral EyEagle v1 Web Components built from the approved Figma tranche and `@eyeagle/tokens`.
 
+## Install
+
+```bash
+pnpm add @eyeagle/tokens @eyeagle/components
+```
+
+Import the component package once from your browser entry point. It registers the custom elements listed below.
+
 ## V1 components
 
 - `ey-button`
@@ -32,4 +40,6 @@ Icon-only controls require a label:
 <ey-icon-button label="Open menu">menu</ey-icon-button>
 ```
 
-This private alpha does not contain page compositions, checkout logic, SOS behavior, or Astro integration.
+This alpha does not contain page compositions, checkout logic, SOS behavior, or Astro integration.
+
+The alpha API is intentionally small and may change before v1. Review component behavior in Storybook before integrating it into an application.

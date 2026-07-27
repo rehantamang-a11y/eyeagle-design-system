@@ -7,6 +7,9 @@
   "sideEffects": ["./src/index.js", "./src/styles.css"],
   "exports": { ".": "./src/index.js", "./styles.css": "./src/styles.css", "./package.json": "./package.json" },
   "publishConfig": { "access": "public" },
-  "scripts": { "test": "node test/contract.mjs" },
+  "scripts": {
+    "test": "node test/contract.mjs",
+    "prepack": "node test/contract.mjs"
+  },
   "dependencies": { "@eyeagle/tokens": "workspace:*" }
 }

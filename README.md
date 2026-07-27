@@ -29,8 +29,22 @@ pnpm storybook
 pnpm storybook:build
 pnpm components:test
 pnpm build
+pnpm packages:verify
 ```
 
 Storybook is the visual review surface for the v1 Web Components. See [`docs/storybook.md`](docs/storybook.md) for local review and the later Chromatic publishing flow.
 
 The Astro website remains frozen until this foundation is accepted.
+
+## Package workflow
+
+`pnpm packages:verify` validates the tokens, builds Storybook, and creates local tarballs in `dist/` for installation testing. It does not publish anything.
+
+When the alpha API is approved, publish the token package first and the components package second:
+
+```bash
+pnpm --filter @eyeagle/tokens publish --access public
+pnpm --filter @eyeagle/components publish --access public
+```
+
+Publishing is deliberately deferred until a clean consumer test and a reviewed Chromatic build pass.

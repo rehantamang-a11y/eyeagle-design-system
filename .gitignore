@@ -2,3 +2,8 @@ node_modules/
 *.tgz
 .DS_Store
 storybook-static/
+dist/
+build-storybook.log
+chromatic.log
+chromatic-build-*.xml
+chromatic-diagnostics.json

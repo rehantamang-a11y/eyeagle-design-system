@@ -2,7 +2,15 @@
 
 The first EyEagle design-system package. It contains the approved token contract and generated CSS output.
 
-This package is experimental and is published as a private prerelease while the design system is being validated.
+This package is experimental and is intended for prerelease testing while the design system is being validated.
+
+## Install
+
+```bash
+pnpm add @eyeagle/tokens
+```
+
+The package is currently an alpha release. Token names and values may change before v1.
 
 ## Outputs
 
